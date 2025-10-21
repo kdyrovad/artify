@@ -1,0 +1,22 @@
+.home-header {
+  position: absolute;
+  top: 1.5rem;
+  left: 3rem;
+  z-index: 20;
+}
+  
+.header-logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .home-header {
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .header-logo {
+    height: 40px;
+  }
+}

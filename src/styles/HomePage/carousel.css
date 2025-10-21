@@ -1,0 +1,170 @@
+.carousel-title {
+    font-family: 'Cigra', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .carousel-subtitle {
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0 2rem;
+  }
+  
+  .carousel-card {
+    position: relative;
+    min-width: 600px;
+    height: 480px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 0.8));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  
+  .artist-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .art-title-block {
+    margin-top: auto;
+  }
+  
+  .art-title-block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .art-title-block .date {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+  }
+  
+  .carousel-arrow.left {
+    left: 0.5rem;
+  }
+  
+  .carousel-arrow.right {
+    right: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-track {
+      gap: 1rem;
+      padding: 1rem 1rem 2rem;
+    }
+  
+    .carousel-card {
+      min-width: 80vw;
+      height: 300px;
+    }
+  
+    .art-title-block h3 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-arrow {
+      font-size: 1.5rem;
+      padding: 0.3rem 0.7rem;
+    }
+  
+    .carousel-title {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-subtitle {
+      font-size: 0.9rem;
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-track {
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .carousel-card {
+      min-width: 85vw;
+      max-width: 85vw;
+      height: auto;
+      max-height: 55vh;
+      scroll-snap-align: start;
+      box-sizing: border-box;
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      margin: 0 auto; /* Центрирование */
+    }
+  
+    .carousel-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .carousel-arrow {
+      display: none;
+    }
+  
+    .carousel-title {
+      font-size: 1.4rem;
+      padding: 0 1rem;
+    }
+  
+    .carousel-subtitle {
+      font-size: 0.85rem;
+      padding: 0 1rem 1rem;
+    }
+  }

@@ -1,0 +1,181 @@
+.artist-hero-banner {
+  background: linear-gradient(to right, #111, #1a1a1a);
+  padding: 4rem 2rem 2.5rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #333;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.back-button-fancy {
+  position: absolute;
+  top: 2rem;
+  left: 1.6rem;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.back-button-fancy:hover {
+  background-color: #222;
+  color: #fff;
+  border-color: #666;
+}
+
+.category-page-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+}
+
+.category-page-subtitle {
+  font-size: 1.05rem;
+  color: #aaa;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #222;
+  border-color: #666;
+  color: #fff;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.artist-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.artist-card:hover {
+  transform: translateY(-4px);
+}
+
+.artist-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background-color: #2a2a2a;
+}
+
+.artist-info {
+  padding: 1rem;
+}
+
+.artist-info h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+.artist-info p {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.artist-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease-in-out;
+  position: relative;
+}
+
+.artist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1);
+}
+
+.artist-img-wrapper {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.artist-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.artist-card:hover .artist-img {
+  transform: scale(1.05);
+}
+
+.artist-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.artist-info {
+  padding: 1rem;
+}
+
+.artist-info h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+.artist-info p {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
