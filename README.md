@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+# 🎨 Artify — Online Art Discovery Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Artify is a responsive web application built with **React + TypeScript** that allows users to explore, search, and filter artworks by artists, categories, and styles using a **public art API**.  
+It focuses on **performance**, **usability**, and **modern design**, offering a seamless experience across all devices.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Artwork Search & Filtering** — Find artworks by artist name, category, or keyword.  
+- **Dynamic Artwork Display** — View detailed information about each piece.  
+- **Optimized Rendering** — Lazy loading and reusable components for fast performance.  
+- **Smooth Animations** — Fluid transitions for an engaging browsing experience.  
+- **Responsive Design** — Works beautifully on mobile, tablet, and desktop screens.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧠 Tech Stack
 
-### `npm test`
+| Category | Technologies |
+|-----------|--------------|
+| **Frontend** | React, TypeScript |
+| **Styling** | CSS Modules / custom styles |
+| **API** | Public Art API |
+| **Build Tool** | Vite / Create React App (depending on your setup) |
+| **Version Control** | Git & GitHub |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧩 Project Structure
+src/
+┣ components/
+┣ pages/
+┣ styles/
+┣ assets/
+┣ App.tsx
+┗ index.tsx
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **components/** — Reusable UI components (cards, filters, search bar).  
+- **pages/** — Main screens like Home, Artists, ArtworkDetail.  
+- **styles/** — Modular CSS files for maintainability.  
+- **assets/** — Static images or icons.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Installation & Setup
 
-### `npm run eject`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kdyrovad/artify.git
+   cd artify
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. **Install dependencies**
+   ```bash
+   npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server**
+   ```bash
+   npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   or
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   npm start
 
-## Learn More
+4. **Open your browser**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## 🧑‍💻 Author
+
+**Dilyara Kdyrova**  
+💼 Software Engineer | React • TypeScript • Node.js • RESTful APIs  
+📍 Boston, USA  
+
+- 🌐 [LinkedIn](https://www.linkedin.com/in/kdyrovadd/)  
+- 💻 [GitHub](https://github.com/kdyrovad)  
+- ✉️ kdyrovadd@gmail.com  
+
+---
+
+## ⭐ Acknowledgements
+
+Gratitude to the public art API creators and open-source libraries that made this project possible.  
+If you enjoy **Artify**, please consider giving it a ⭐ on GitHub — it helps others discover the project!  
+
+---
+
+> _“Art is the lie that enables us to realize the truth.”_ — **Pablo Picasso**
+   
